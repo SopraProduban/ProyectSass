@@ -1,0 +1,9 @@
+@import "../../styles.scss";
+
+p {color : $color;}
+
+
+.cuadrado{
+    @extend .div-defecto;
+    background-color: blue;
+}

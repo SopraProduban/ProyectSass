@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+//declaracion de variables
+$color : green;
+
+//mixim 
+
+@mixin circle($width,$color_circulo){
+    width: $width;
+    height: $width;
+    border-radius: 100%;
+    background: $color_circulo;
+}
+
+.div-defecto{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}

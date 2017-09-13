@@ -1,0 +1,52 @@
+@import "../../styles.scss";
+
+p {color : $color;}
+
+div{
+    @include circle(100px, red);
+}
+
+//anidamiento
+.main-nav{
+    ul{
+        list-style: none;
+        margin: 0;
+        padding:10px;
+    }
+    li{
+        display: inline-block;
+    }
+    a{
+        display: block;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+}
+
+
+//en css seria 
+/*
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+.main-nav li {
+  display: inline-block;
+}
+ 
+.main-nav a {
+  display: block;
+  text-decoration: none;
+}
+ 
+.main-nav a:hover {
+  text-decoration: underline;
+}
+*/
+
+
